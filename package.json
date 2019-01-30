@@ -1,11 +1,9 @@
 {
   "name": "grimorio-danda",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "homepage": "http://antomarsi.github.io/grimorio-danda",
   "dependencies": {
-    "bootstrap": "^4.2.1",
-    "gh-pages": "^2.0.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-router-dom": "^4.3.1",
@@ -31,6 +29,8 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "rpg-awesome": "^0.2.0"
+    "bootstrap": "^4.2.1",
+    "rpg-awesome": "^0.2.0",
+    "gh-pages": "^2.0.1"
   }
 }
