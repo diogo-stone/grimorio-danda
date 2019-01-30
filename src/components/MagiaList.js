@@ -1,11 +1,12 @@
 import React from "react";
 import { ListGroup, ListGroupItem } from 'reactstrap';
-import magiasData from '../data/magias.json';
+import { Link } from "react-router-dom";
+import slugify from "slugify";
 
 function MagiaList(props) {
 
-    const { nameFilter, levelsFilter, circulosFilter } = props;
-    const magias = magiasData.filter(magia => {
+    const { nameFilter, levelsFilter, circulosFilter, listaMagia} = props;
+    const magias = listaMagia.filter(magia => {
         if (nameFilter.length && !magia.nome.toLowerCase().includes(nameFilter.toLowerCase())) {
             return false;
         }
@@ -20,7 +21,7 @@ function MagiaList(props) {
     return (
         <ListGroup>
             {magias.map(magia => (
-                <ListGroupItem key={magia.id}>{magia.nome}</ListGroupItem>
+                <ListGroupItem key={magia.id}><Link to={`${magia.id}/${slugify(magia.nome, {replacement: '-'})}`}>{magia.nome}</Link></ListGroupItem>
             ))}
         </ListGroup>
     );

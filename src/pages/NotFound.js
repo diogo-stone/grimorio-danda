@@ -6,25 +6,25 @@ class NotFound extends Component {
     return (
       <Container>
         <Row md="12">
-          <div class="error-template">
+          <div className="error-template">
             <h1>Oops!</h1>
             <h2>404 Not Found</h2>
-            <div class="error-details">
+            <div className="error-details">
               Sorry, an error has occured, Requested page not found!
             </div>
-            <div class="error-actions">
+            <div className="error-actions">
               <a
                 href="#"
-                class="btn btn-primary btn-lg"
+                className="btn btn-primary btn-lg"
               >
-                <span class="glyphicon glyphicon-home" />
+                <span className="glyphicon glyphicon-home" />
                 Take Me Home{" "}
               </a>
               <a
                 href="#"
-                class="btn btn-default btn-lg"
+                className="btn btn-default btn-lg"
               >
-                <span class="glyphicon glyphicon-envelope" /> Contact Support{" "}
+                <span className="glyphicon glyphicon-envelope" /> Contact Support{" "}
               </a>
             </div>
           </div>

@@ -25,7 +25,7 @@ class Topbar extends Component {
 
   render() {
     return (
-    <Navbar color="dark" dark expand="md">
+    <Navbar color="dark" dark expand="md" fixed="top">
         <NavbarBrand>Grimório Dand'a</NavbarBrand>
         <NavbarToggler onClick={() => this.toggle()} />
         <Collapse isOpen={this.state.isOpen} navbar>

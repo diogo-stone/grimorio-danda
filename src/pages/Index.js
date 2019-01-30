@@ -26,6 +26,7 @@ class Index extends Component {
 
     render() {
         const { nameFilter, levelsFilter, circulosFilter } = this.state;
+        const { listaMagia } = this.props;
         return (
             <Container>
             <Row>
@@ -33,7 +34,7 @@ class Index extends Component {
                     <Filtro levelsFilter={levelsFilter} circulosFilter={circulosFilter} nameFilter={nameFilter} handleChange={this.onSearchChange}/>
                 </Col>
                 <Col xs="12" md="6">
-                    <MagiaList levelsFilter={levelsFilter} circulosFilter={circulosFilter} nameFilter={nameFilter}/>
+                    <MagiaList levelsFilter={levelsFilter} circulosFilter={circulosFilter} nameFilter={nameFilter} listaMagia={listaMagia}/>
                 </Col>
             </Row>
             </Container>
