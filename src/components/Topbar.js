@@ -11,6 +11,7 @@ import {
     DropdownToggle,
     DropdownMenu,
     DropdownItem } from 'reactstrap';
+    import { Link } from "react-router-dom";
 
 class Topbar extends Component {
   state = {
@@ -26,7 +27,7 @@ class Topbar extends Component {
   render() {
     return (
     <Navbar color="dark" dark expand="md" fixed="top">
-        <NavbarBrand>Grimório Dand'a</NavbarBrand>
+        <NavbarBrand><Link to="/" style={{textDecoration:"none", color:"#FFFFFF"}}>Grimório Dand'a</Link></NavbarBrand>
         <NavbarToggler onClick={() => this.toggle()} />
         <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
