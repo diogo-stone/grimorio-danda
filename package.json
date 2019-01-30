@@ -1,8 +1,8 @@
 {
   "name": "grimorio-danda",
-  "version": "1.0.1",
+  "version": "0.1.0",
   "private": true,
-  "homepage": "http://antomarsi.github.io/grimorio-danda",
+  "homepage": "https://antomarsi.github.io/grimorio-danda/",
   "dependencies": {
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
