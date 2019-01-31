@@ -1,20 +1,12 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
-
-import {
-  Container,
-  Row,
-  CardTitle,
-  Card,
-  CardText,
-  CardBody,
-  Col
-} from "reactstrap";
+import { CardTitle, Card, CardBody } from "reactstrap";
 
 class MagiaInfo extends Component {
   state = {
     magia: null
   };
+
   componentWillMount() {
     const {
       history,
@@ -24,10 +16,10 @@ class MagiaInfo extends Component {
       }
     } = this.props;
     const magia = listaMagia.find(x => x.id === Number.parseInt(magicId));
-    console.log(magia);
     if (!magia) {
       history.push("/404");
     }
+
     this.setState({ magia });
   }
 
@@ -44,7 +36,11 @@ class MagiaInfo extends Component {
             <dt className="col-sm-3">Niveis</dt>
             <dd className="col-sm-9">
               {magia.niveis.map((nivel, index) => (
-                <p key={index}>{nivel.circulo} : {nivel.nivel}</p>
+                <p key={index}>
+                  {nivel.circulo} {nivel.nivel}{" "}
+                  {magia.descritores[index] &&
+                    `(${magia.descritores[index].descritor})`}
+                </p>
               ))}
             </dd>
             <dt className="col-sm-3">Descritores</dt>
@@ -74,7 +70,6 @@ class MagiaInfo extends Component {
           </dl>
           <p className="h4">Descrição</p>
           <p dangerouslySetInnerHTML={{ __html: magia.descricao }} />
-          {JSON.stringify(magia)}
         </CardBody>
       </Card>
     );

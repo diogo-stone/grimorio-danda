@@ -19,14 +19,14 @@ npm +6
 Após clonar o projeto, entre na pasta do projeto e rode o seguinte comando para instalar todos os pacotes necessários para o projeto
 
 ```
-npm install
+$ npm install
 ```
 
 ## Running in Development (locally)
 
 Para rodar o projeto, somente rode o comando abaixo:
 ```
-npm start
+$ npm start
 ```
 Depois de compilar, abrirá uma página em seu navegador para o caminho `http://localhost:3000`, qualquer alteração ao seu projeto irá atualizar a página.
 
@@ -39,11 +39,13 @@ Nenhum teste foi implementado.
 Para publicar para seu [GithubPages](https://pages.github.com/), certifique que o está habilitado em seu projeto, e que ele utilizará a branch `gh-pages`.
 Antes de publicar, certifique que o projeto foi *Buildado*, use o comando abaixo para compilar em produção:
 ```
-npm run build
+$ npm run build
 ```
+
 Após o build, utilize o comando abaixo para enviar para o seu [GithubPages](https://pages.github.com/):
+
 ```
-npm run deploy
+$ npm run deploy
 ```
 
 ## Authors

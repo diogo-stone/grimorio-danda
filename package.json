@@ -4,6 +4,10 @@
   "private": true,
   "homepage": "https://antomarsi.github.io/grimorio-danda/",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.13",
+    "@fortawesome/free-regular-svg-icons": "^5.7.0",
+    "@fortawesome/free-solid-svg-icons": "^5.7.0",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-router-dom": "^4.3.1",
@@ -29,8 +33,9 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.7.0",
     "bootstrap": "^4.2.1",
-    "rpg-awesome": "^0.2.0",
-    "gh-pages": "^2.0.1"
+    "gh-pages": "^2.0.1",
+    "rpg-awesome": "^0.2.0"
   }
 }
