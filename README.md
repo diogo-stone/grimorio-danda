@@ -3,7 +3,8 @@ Esse projeto é um Grimório online para as magias do Dand'a RPG.
 
 ## Getting Started
 
-Se você já sabe como funciona um aplicativo React, então você já sabe como funciona, mas caso contrário, siga as instruções abaixo
+Se você já sabe como funciona um aplicativo React, então você já sabe como funciona, mas caso contrário, siga as instruções abaixo.
+Para poder alterar as informações das magias, devesse alterar o arquivo `src/data/magias.json`.
 
 ### Prerequisites
 
